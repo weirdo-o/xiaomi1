@@ -6,16 +6,19 @@
         let pic=document.querySelectorAll('ul.banner li')
         let left=document.querySelector('.banner-jiantou.left1')
         let right=document.querySelector('.banner-jiantou.right2')
+        let cirs=document.querySelectorAll('.yd li')
         let n=0
         function move() {
             n++;
             if(n>=pic.length){
                 n=0
             }
-            pic.forEach(function (val) {
+            pic.forEach(function (val,ind) {
                 val.classList.remove('banlist')
+                cirs[ind].classList.remove('active')
             })
             pic[n].classList.add('banlist')
+            cirs[n].classList.add('active')
         }
         let time=setInterval(move,2000);
         div.onmouseover=function () {
@@ -24,10 +27,19 @@
         div.onmouseout=function () {
             time=setInterval(move,2000)
         }
+        let flag=true
         right.onclick=function () {
+            if(!flag){
+                return
+            }
+            flag=false
             move()
         }
         left.onclick=function () {
+            if(!flag){
+                return
+            }
+            flag=false
             n--;
             if(n<0){
                 n=pic.length-1
@@ -38,7 +50,27 @@
             pic[n].classList.add('banlist')
         }
 
+        cirs.forEach(function (val,index) {
+            val.onclick=function () {
+                if(!flag){
+                    return
+                }
+                flag=false
+                pic.forEach(function (va,ind) {
+                    va.classList.remove('banlist')
+                    cirs[ind].classList.remove('active')
+                })
+                pic[index].classList.add('banlist')
+                this.classList.add('active')
+                n=index
+            }
+        })
 
+        pic.forEach(function (dom) {
+            dom.addEventListener('transitionend',function () {
+                flag=true
+            })
+        })
 
 
         function xxka(a,b) {
