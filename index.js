@@ -6,7 +6,6 @@
         let pic=document.querySelectorAll('ul.banner li')
         let left=document.querySelector('.banner-jiantou.left1')
         let right=document.querySelector('.banner-jiantou.right2')
-        console.log(left)
         let n=0
         function move() {
             n++;
