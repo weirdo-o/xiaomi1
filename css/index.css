@@ -538,7 +538,8 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	display: none;
+	opacity:0;
+	transition:opacity 1s;
 }
 .banner li a img{
 	width: 100%;
@@ -546,7 +547,8 @@
 
 }
 .banner .banlist{
-	display: block;
+	opacity:1;
+	z-index: 100;
 }
 
 .celan{
@@ -557,6 +559,7 @@
 	position: absolute;
 	top: 0; 
 	left: 0;
+	z-index: 200;
 }
 .celan li a{
 	display: block;
@@ -588,8 +591,9 @@
 	position: absolute;
 	right: 35px;
 	bottom: 25px;
+	z-index: 200;
 }
-.yd li a{
+.yd li{
 	width: 6px;
 	height: 6px;
 	background: rgba(0, 0, 0, 0.5);
@@ -598,10 +602,13 @@
 	float: left;
 	margin-right: 10px;   
 }
-.yd li:last-child a{
+.yd li:last-child{
 	margin-right: 0px;
 }
-.yd li a:hover{
+.yd li:hover{
+	background: rgba(255,255, 255, 0.8);
+}
+.yd .active{
 	background: rgba(255,255, 255, 0.8);
 }
 .banner-jiantou{
@@ -618,6 +625,7 @@
 	margin-top: auto;
 	margin-bottom:auto;
 	cursor: pointer;
+	z-index: 200;
 	/*让div换成手指*/
 }
 .left1{
