@@ -188,7 +188,6 @@
 // 底下的双下标轮播结束
         let dibu=document.querySelector('.h-dibubox')
         let hea=document.querySelectorAll('.h-dibubox .dibu')
-        console.log(hea)
         let jtleft=document.querySelector('.jtleft')
         let jtright=document.querySelector('.jtright')
         let width=parseInt(window.getComputedStyle(dibu,null).width)
