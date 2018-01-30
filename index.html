@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="xiaomi.ico">
     <script src="index.js"></script>
+    <script src="animate.js"></script>
 </head>
 <body>
      <!-- 头部开始 -->
@@ -212,14 +213,16 @@
     </div>
 
 
-
 <div class="header">
 	<div class="toubu">
 		<div class="mingxing">小米明星单品</div>
-		<div class="jiantou"><div class="jiantou1"> > </div><div class="jiantou1"> < </div>
-		</div>
+		<ul class="jiantou">
+            <li class="jtleft active"> &lt; </li>
+            <li class="jtright"> &gt; </li>
+		</ul>
 	</div>
-	<div class="dibu">
+    <div class="h-dibubox">
+	    <div class="dibu active">
 		<div class="list"><a href="" class="list1"><img src="img/1.png" alt=""></a>
 		<a href=""class="title1">小米Max2</a>
 		<div class="title">大屏大电量，轻薄全金属</div>
@@ -250,8 +253,42 @@
 		<div class="jiage1">3599元起</div>
 		</div>
 	</div>
+        <div class="dibu">
+            <div class="list"><a href="" class="list1"><img src="img/2.png" alt=""></a>
+                <a href=""class="title1">小米Max2</a>
+                <div class="title">大屏大电量，轻薄全金属</div>
+                <div class="jiage1">1399元起</div>
+            </div>
+
+            <div class="list"><a href="" class="list1"><img src="img/4.png" alt=""></a>
+                <a href=""class="title1">小米MIX 2</a>
+                <div class="title">全面屏2.0，5.99"大屏</div>
+                <div class="jiage1">3299元起</div>
+            </div>
+
+            <div class="list"><a href="" class="list1"><img src="img/1.png" alt=""></a>
+                <a href=""class="title1">红米5A</a>
+                <div class="title">8天超长待机，137g轻巧机身</div>
+                <div class="jiage1">599元起</div>
+            </div>
+
+            <div class="list"><a href="" class="list1"><img src="img/3.png" alt=""></a>
+                <a href=""class="title1">小米电视4A 43英寸 标准版</a>
+                <div class="title">全高清HDR 四核高性能处理器</div>
+                <div class="jiage1">1899元起</div>
+            </div>
+
+            <div class="list"><a href="" class="list1"><img src="img/5.png" alt=""></a>
+                <a href=""class="title1">小米笔记本</a>
+                <div class="title">更轻更薄，像杂志一样随身携带</div>
+                <div class="jiage1">3599元起</div>
+            </div>
+        </div>
+    </div>
 </div>
+
 <div class="kuang">
+
 <div class="header1" id="jjdd">
       <div class="toubu1">
 	     <div class="jiadian">家电</div>
@@ -3024,58 +3061,161 @@
 		<div class="nr-toubu-title">内容</div>
 	</div>
 	<div class="rpcp-dibu">
-	<div class="nr-dibu-list">
-		<div class="nr-dibu-list-title">图书</div>
-		<a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
-		<a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
-	    <a href="" class="nr-dibu-list-jiage">29.37元</a>
-	    <a href="" class="nr-dibu-list-tu"><img src="img/n1.png" alt=""></a>
-	    <div class="yuandianbox">
-	        <div class="yuandian"></div> 
-	    	<a href="" class="yuandian"></a>
-	    	<a href="" class="yuandian"></a>
-	    	<a href="" class="yuandian"></a>
-	    </div>
-	</div>
-	<div class="nr-dibu-list">
-		<div class="nr-dibu-list-title">图书</div>
-		<a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
-		<a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
-	    <a href="" class="nr-dibu-list-jiage">29.37元</a>
-	    <a href="" class="nr-dibu-list-tu"><img src="img/n2.png" alt=""></a>
-	    <div class="yuandianbox">
-	        <div class="yuandian"></div> 
-	    	<a href="" class="yuandian"></a>
-	    	<a href="" class="yuandian"></a>
-	    	<a href="" class="yuandian"></a>
-	    </div>
-	</div>
-	<div class="nr-dibu-list">
-		<div class="nr-dibu-list-title">图书</div>
-		<a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
-		<a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
-	    <a href="" class="nr-dibu-list-jiage">29.37元</a>
-	    <a href="" class="nr-dibu-list-tu"><img src="img/n3.png" alt=""></a>
-	    <div class="yuandianbox">
-	        <div class="yuandian"></div> 
-	    	<a href="" class="yuandian"></a>
-	    	<a href="" class="yuandian"></a>
-	    	<a href="" class="yuandian"></a>
-	    </div>
-	</div>
-	<div class="nr-dibu-list">
-		<div class="nr-dibu-list-title">图书</div>
-		<a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
-		<a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
-	    <a href="" class="nr-dibu-list-jiage">29.37元</a>
-	    <a href="" class="nr-dibu-list-tu"><img src="img/n4.png" alt=""></a>
-	    <div class="yuandianbox">
-	        <div class="yuandian"></div> 
-	    	<a href="" class="yuandian"></a>
-	    	<a href="" class="yuandian"></a>
-	    	<a href="" class="yuandian"></a>
-	    </div>
-	</div>
+        <div class="nr-dibu-list">
+            <div class="nr-dibu-list-title">图书</div>
+            <div class="nrbox">
+                <ul class="nrul">
+                    <li class="active">
+                        <a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
+                        <a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
+                        <a href="" class="nr-dibu-list-jiage">29.37元</a>
+                        <a href="" class="nr-dibu-list-tu"><img src="img/n3.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
+                        <a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
+                        <a href="" class="nr-dibu-list-jiage">29.37元</a>
+                        <a href="" class="nr-dibu-list-tu"><img src="img/n1.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
+                        <a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
+                        <a href="" class="nr-dibu-list-jiage">29.37元</a>
+                        <a href="" class="nr-dibu-list-tu"><img src="img/n2.png" alt=""></a>
+                    </li>
+                </ul>
+
+            <ul class="yuandian">
+                <li class="active"></li>
+                <li ></li>
+                <li ></li>
+            </ul>
+            <div class="left">&lt;</div>
+            <div class="right">&gt;</div>
+            </div>
+        </div>
+        <div class="nr-dibu-list">
+            <div class="nr-dibu-list-title">图书</div>
+                <div class="nrbox">
+                <ul class="nrul">
+                    <li class="active">
+                        <a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
+                        <a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
+                        <a href="" class="nr-dibu-list-jiage">29.37元</a>
+                        <a href="" class="nr-dibu-list-tu"><img src="img/n3.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
+                        <a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
+                        <a href="" class="nr-dibu-list-jiage">29.37元</a>
+                        <a href="" class="nr-dibu-list-tu"><img src="img/n1.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
+                        <a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
+                        <a href="" class="nr-dibu-list-jiage">29.37元</a>
+                        <a href="" class="nr-dibu-list-tu"><img src="img/n2.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
+                        <a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
+                        <a href="" class="nr-dibu-list-jiage">29.37元</a>
+                        <a href="" class="nr-dibu-list-tu"><img src="img/n4.png" alt=""></a>
+                    </li>
+                </ul>
+
+                <ul class="yuandian">
+                    <li class="active"></li>
+                    <li ></li>
+                    <li ></li>
+                    <li ></li>
+                </ul>
+                <div class="left">&lt;</div>
+                <div class="right">&gt;</div>
+            </div>
+        </div>
+        <div class="nr-dibu-list">
+            <div class="nr-dibu-list-title">图书</div>
+                <div class="nrbox">
+                <ul class="nrul">
+                    <li class="active">
+                        <a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
+                        <a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
+                        <a href="" class="nr-dibu-list-jiage">29.37元</a>
+                        <a href="" class="nr-dibu-list-tu"><img src="img/n3.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
+                        <a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
+                        <a href="" class="nr-dibu-list-jiage">29.37元</a>
+                        <a href="" class="nr-dibu-list-tu"><img src="img/n1.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
+                        <a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
+                        <a href="" class="nr-dibu-list-jiage">29.37元</a>
+                        <a href="" class="nr-dibu-list-tu"><img src="img/n2.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
+                        <a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
+                        <a href="" class="nr-dibu-list-jiage">29.37元</a>
+                        <a href="" class="nr-dibu-list-tu"><img src="img/n4.png" alt=""></a>
+                    </li>
+                </ul>
+
+                <ul class="yuandian">
+                    <li class="active"></li>
+                    <li ></li>
+                    <li ></li>
+                    <li ></li>
+                </ul>
+                <div class="left">&lt;</div>
+                <div class="right">&gt;</div>
+            </div>
+        </div>
+        <div class="nr-dibu-list">
+            <div class="nr-dibu-list-title">图书</div>
+                <div class="nrbox">
+                <ul class="nrul">
+                    <li class="active">
+                        <a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
+                        <a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
+                        <a href="" class="nr-dibu-list-jiage">29.37元</a>
+                        <a href="" class="nr-dibu-list-tu"><img src="img/n3.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
+                        <a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
+                        <a href="" class="nr-dibu-list-jiage">29.37元</a>
+                        <a href="" class="nr-dibu-list-tu"><img src="img/n1.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
+                        <a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
+                        <a href="" class="nr-dibu-list-jiage">29.37元</a>
+                        <a href="" class="nr-dibu-list-tu"><img src="img/n2.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="" class="nr-dibu-list-title1">哈利波特与被诅咒的孩子</a>
+                        <a href="" class="nr-dibu-list-title2">哈利波特第八个故事中文版正式来袭，特别彩排版剧本</a>
+                        <a href="" class="nr-dibu-list-jiage">29.37元</a>
+                        <a href="" class="nr-dibu-list-tu"><img src="img/n4.png" alt=""></a>
+                    </li>
+                </ul>
+
+                <ul class="yuandian">
+                    <li class="active"></li>
+                    <li ></li>
+                    <li ></li>
+                    <li ></li>
+                </ul>
+                <div class="left">&lt;</div>
+                <div class="right">&gt;</div>
+            </div>
+        </div>
+
+
 	</div>
 	</div>
 <!-- 内容结束 -->
