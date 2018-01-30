@@ -19,11 +19,11 @@
 }
 @font-face {
   font-family: 'iconfont';  /* project id 526582 */
-  src: url('https://at.alicdn.com/t/font_526582_qt18qrehtzkt9.eot');
-  src: url('https://at.alicdn.com/t/font_526582_qt18qrehtzkt9.eot?#iefix') format('embedded-opentype'),
-  url('https://at.alicdn.com/t/font_526582_qt18qrehtzkt9.woff') format('woff'),
-  url('https://at.alicdn.com/t/font_526582_qt18qrehtzkt9.ttf') format('truetype'),
-  url('https://at.alicdn.com/t/font_526582_qt18qrehtzkt9.svg#iconfont') format('svg');
+  src: url('http://at.alicdn.com/t/font_526582_qt18qrehtzkt9.eot');
+  src: url('http://at.alicdn.com/t/font_526582_qt18qrehtzkt9.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_526582_qt18qrehtzkt9.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_526582_qt18qrehtzkt9.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_526582_qt18qrehtzkt9.svg#iconfont') format('svg');
 }
 .iconfont{
 	font-family: 'iconfont';
@@ -37,7 +37,7 @@
 .header{
 	width: 1226px;
 	height: 425px;
-	background: red;
+	/*background: red;*/
 	margin: 0 auto;
    
 }
@@ -58,27 +58,37 @@
 	background: #e0e0e0;
 	float:right;
 	margin-top: 51px;
-
+	display: flex;
+	justify-content: space-between;
 }
-.jiantou1{
+.jtleft,.jtright{
 	width: 34px;
 	height: 22px;
 	background: #ffffff;
-	float:right;
 	margin: 1px;
 	text-align: center;
 	line-height: 22px;
-	color:#b0b0b0;
-	
+	color:#e8e3e0;
 }
-.jiantou .jiantou1:last-child{
-	margin-right: 0;
-    color:#e8e3e0;
+.jiantou .active{
+	color:#b0b0b0;
+}
+.h-dibubox{
+	width: 100%;
+	height: 341px;
+	position: relative;
+	overflow: hidden;
 }
 .dibu{
 	width: 100%;
 	height: 341px;
 	background: #ffffff;
+	position: absolute;
+	top:0;
+	left:100%;
+}
+.dibu.active{
+	left:0;
 }
 .list{
 	width: 234px;
@@ -106,7 +116,7 @@
 	display: block;
 	width: 234px;
 	height: 219px;
-	background: red;
+	/*background: red;*/
 }
 .title1{
 	display: block;
@@ -887,6 +897,62 @@
 	float: left;
 	border-top: 1px solid #ffac13;
 	margin-right: 14px;
+	transition: all 0.5s;
+}
+.nr-dibu-list:hover{
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+	transform: translate3d(0, -2px, 0);
+}
+.nr-dibu-list:hover .left,.nr-dibu-list:hover .right{
+	opacity:1;
+}
+.nrbox{
+	width:100%;
+	height:324px;
+	position: relative;
+	overflow: hidden;
+}
+.nrul{
+	width:100%;
+	height:289px;
+	margin-top: 25px;
+	position: relative;
+}
+.nrul li{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:100%;
+}
+.nrul .active{
+	left:0;
+}
+.left,.right{
+	width: 20px;
+	height: 24px;
+	background-color: rgba(66,66,66,0.6);
+	padding: 12px 0;
+	font-size: 18px;
+	line-height: 24px;
+	position: absolute;
+	top:50%;
+	margin-top: -35px;
+	text-align: center;
+	color: #fff;
+	font-family: '宋体';
+	z-index: 10;
+	cursor: pointer;
+	opacity:0;
+	transition: all 0.5s;
+}
+.left:hover,.right:hover{
+	background-color: #757575;
+}
+.left{
+	left:0;
+}
+.right{
+	right:0;
 }
 .nr-dibu-list:last-child{
 	margin-right: 0;
@@ -902,7 +968,7 @@
 	text-align: center;
 	font-size: 20px;
 	color: #333333;
-	margin-top: 25px;
+
 }
 .nr-dibu-list-title2{
 	display: block;
@@ -910,8 +976,7 @@
 	text-align: center;
 	font-size: 12px;
 	color: #b0b0b0;
-	margin-top: 12px;
-	margin: 0 auto;
+	margin: 12px auto 0;
 	line-height: 21px;
 }
 .nr-dibu-list-jiage{
@@ -924,30 +989,42 @@
 .nr-dibu-list-tu{
 	display: block;
 	width: 296px;
-	height: 201px;
-	background: blue;
+	height: 154px;
+	overflow: hidden;
 }
-.yuandianbox{
-	width: 112px;
-	height: 10px;
-	/* background: yellow; */
-	margin: 0 auto;
+.nr-dibu-list-tu img{
+	width:100%;
 }
 .yuandian{
+	width:100%;
+	height: 30px;
+	/* background: yellow; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left:0;
+	bottom:-5px;
+	z-index:100;
+}
+.yuandian li{
 	width: 6px;
 	height: 6px;
 	background: #b0b0b0;
+	margin:0 12px;
 	border: 2px solid #ffffff;
 	border-radius: 50%;
 	float: left;
-	margin-right: 24px;
+
 }
-.yuandian:first-child{
+.yuandian .active{
 	border: 2px solid #ff6f0f;
 }
-.yuandian:last-child{
-	margin-right:0px;
+.yuandian li:hover{
+	cursor: pointer;
+	background:#ff6f0f;
 }
+
 .nr-dibu-list:nth-child(2){
 	border-top: 1px solid #83c44e;
 }
