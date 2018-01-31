@@ -186,6 +186,7 @@
             box1(val)
         })
 // 底下的双下标轮播结束
+
         let dibu=document.querySelector('.h-dibubox')
         let hea=document.querySelectorAll('.h-dibubox .dibu')
         let jtleft=document.querySelector('.jtleft')
@@ -253,4 +254,24 @@
             jtleft.classList.add('active')
             now=next
         }
+
+
+
+        let weini=document.querySelector('.wntj')
+        let youjian=weini.querySelector('.jtright')
+        let zuojian=weini.querySelector('.jtleft')
+        let wndibu=weini.querySelector('.wntj-dibu')
+
+        youjian.onclick=function () {
+            for(let m=1;m<5;m++){
+                let aa=4960/m
+                wndibu.style.marginLeft=-aa+'px'
+            }
+        }
+        zuojian.onclick=function () {
+            wndibu.style.marginLeft=0
+
+        }
+
+
     }
