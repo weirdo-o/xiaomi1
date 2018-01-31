@@ -19,11 +19,11 @@
 }
 @font-face {
   font-family: 'iconfont';  /* project id 526582 */
-  src: url('https://at.alicdn.com/t/font_526582_qt18qrehtzkt9.eot');
-  src: url('https://at.alicdn.com/t/font_526582_qt18qrehtzkt9.eot?#iefix') format('embedded-opentype'),
-  url('https://at.alicdn.com/t/font_526582_qt18qrehtzkt9.woff') format('woff'),
-  url('https://at.alicdn.com/t/font_526582_qt18qrehtzkt9.ttf') format('truetype'),
-  url('https://at.alicdn.com/t/font_526582_qt18qrehtzkt9.svg#iconfont') format('svg');
+  src: url('http://at.alicdn.com/t/font_526582_qt18qrehtzkt9.eot');
+  src: url('http://at.alicdn.com/t/font_526582_qt18qrehtzkt9.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_526582_qt18qrehtzkt9.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_526582_qt18qrehtzkt9.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_526582_qt18qrehtzkt9.svg#iconfont') format('svg');
 }
 .iconfont{
 	font-family: 'iconfont';
@@ -738,6 +738,7 @@
 	height: 360px;
 	background: #f5f5f5;
 	margin: 0 auto;
+	overflow: hidden;
 }
 .wntj-toubu{
 	width: 1226px;
@@ -754,8 +755,9 @@
 	margin-top: 16px;
 }
 .wntj-dibu{
-	width: 1226px;
+	width: 4960px;
 	height: 300px;
+	transition: margin-left 0.5s;
 	/* background: black; */
 }
 .wntj-dibu-list{
@@ -764,6 +766,10 @@
 	background: #ffffff;
 	float: left;
 	margin-right: 14px;
+}
+.wntj-dibu-list:hover{
+	transform: translate3d(0, -2px, 0);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 .wntj-dibu-list:last-child{
 	margin-right:0;
